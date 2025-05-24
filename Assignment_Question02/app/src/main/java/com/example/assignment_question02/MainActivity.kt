@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         divideButton = findViewById(R.id.divideButton)
         resultTextView = findViewById(R.id.resultTextView)
 
-        
+
         addButton.setOnClickListener {
             performOperation('+')
         }

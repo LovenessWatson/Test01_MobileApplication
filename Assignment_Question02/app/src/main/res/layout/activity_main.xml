@@ -7,11 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="50sp"
+        android:textSize="20sp"
+        android:text="@string/NAME"
+        app:layout_constraintTop_toTopOf="@+id/firstNumber"/>
+
     <EditText
         android:id="@+id/firstNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First Number"
+        android:layout_marginTop="50sp"
         android:layout_marginStart="50sp"
         android:layout_marginEnd="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +33,7 @@
         android:id="@+id/secondNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="100sp"
         android:layout_marginStart="50sp"
         android:layout_marginEnd="50sp"
         android:hint="Second Number"
@@ -36,6 +46,7 @@
         android:id="@+id/operationLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
         app:layout_constraintBottom_toBottomOf="@id/secondNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
